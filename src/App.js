@@ -10,6 +10,11 @@ import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 import Identicon from "identicon.js";
 
+
+
+import { Box } from "@chakra-ui/react"
+
+
 function App() {
     const {isAuthenticated, isAuthUndefined, user, logout} = useMoralis();
 
@@ -30,6 +35,15 @@ function App() {
                             <Box>
                                 <Button onClick={() => logout()}>Logout</Button>
                             </Box>
+                            
+                            
+                            
+                            <Box bg="tomato" w="100%" p={4} color="white">      
+                                This is the Box
+                           </Box>
+                           
+                           
+                           
                         </Stack>
                     )
                 }
